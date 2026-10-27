@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arfatul Mowla Shuvo | Senior Flutter Engineer</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta name="description"
+        content="Senior Flutter Software Engineer with 7+ years of experience specializing in cross-platform mobile applications, fintech, e-commerce, and GPS tracking solutions.">
+    <meta name="keywords"
+        content="Flutter Developer, Mobile App Developer, Android Developer, .NET Backend, Bangladesh, Cross-Platform Engineer">
+    <meta name="author" content="Arfatul Mowla Shuvo">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Arfatul Mowla Shuvo | Senior Flutter Engineer">
+    <meta property="og:description"
+        content="Senior Flutter Software Engineer with 7+ years of experience building scalable mobile applications.">
+    <meta property="og:url" content="https://mowlashuvo.com">
+    <meta property="og:image" content="assets/images/og-image.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arfatul Mowla Shuvo | Senior Flutter Engineer">
+    <meta name="twitter:description"
+        content="Senior Flutter Software Engineer specializing in cross-platform applications and backend integration.">
+    <meta name="twitter:image" content="assets/images/og-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mowlashuvo.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="styles/slider.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arfatul Mowla Shuvo",
+        "jobTitle": "Senior Flutter Software Engineer",
+        "url": "https://mowlashuvo.com",
+        "email": "mowlashuvo2@gmail.com",
+        "telephone": "+8801680949744",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dhaka",
+            "addressCountry": "BD"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/mowlashuvo/",
+            "https://github.com/mowlashuvo",
+            "https://mowlashuvo.github.io/portfolio"
+        ],
+        "image": "assets/images/profile.png",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Bangladesh Army"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "East Delta University"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header id="header" role="banner">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </a>
+                <nav class="nav-links" role="navigation" aria-label="Main navigation">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme"
+                        aria-pressed="false">
+                        <i class="fas fa-sun" aria-hidden="true"></i>
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false"
+                    aria-controls="mobileNavDrawer">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" role="navigation" aria-label="Mobile navigation">
+        <div class="mobile-nav-header">
+            <a href="#home" class="mobile-nav-logo">
+                <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+            </a>
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link active"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="mobile-nav-link"><i class="fas fa-user"></i> About</a>
+            <a href="#experience" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
+            <a href="#projects" class="mobile-nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <div class="theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Hero section with introduction">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Arfatul Mowla <span class="gradient-text">Shuvo</span></h1>
+                    <h2>Senior Flutter & Cross-Platform Engineer</h2>
+                    <p>
+                        Senior Flutter Software Engineer with 7+ years of experience architecting and delivering
+                        scalable, cross-platform mobile applications. Proven expertise in Flutter/Dart, native Android
+                        (Java), and backend integration (.NET Core). Specialized in fintech, e-commerce, and GPS
+                        tracking domains.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-code"></i> View Projects
+                        </a>
+                        <a href="assets/documents/resume.pdf" target="_blank" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <img src="assets/images/profile.png" alt="Arfatul Mowla Shuvo" class="profile-photo"
+                                onerror="this.style.display='none'">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Arfatul Mowla Shuvo</h3>
+                            <p>Senior Flutter Engineer</p>
+                            <div class="social-links">
+                                <a href="mailto:mowlashuvo2@gmail.com" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                                <a href="tel:+8801680949744" title="Phone"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/8801680949744" title="WhatsApp" target="_blank"><i
+                                        class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.linkedin.com/in/mowlashuvo/" title="LinkedIn" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/mowlashuvo" title="GitHub" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" aria-label="About me">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Senior Flutter Engineer passionate about building impactful mobile applications and
+                        continuously improving my skills. I am eager to contribute my expertise to a forward-thinking
+                        team and excited about opportunities that allow me to create meaningful user experiences.</p>
+                    <p>With 7+ years of experience across fintech, e-commerce, and GPS tracking domains, I bring a
+                        full-stack mindset to mobile development, ensuring seamless integration between Flutter
+                        frontends and .NET Core backend systems.</p>
+                    <p>My work is backed by an IEEE publication on distributed cloud storage security, reflecting my
+                        commitment to solving complex technical challenges.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">7+</div>
+                            <div class="stat-text">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-text">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">6</div>
+                            <div class="stat-text">Companies Worked</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1</div>
+                            <div class="stat-text">IEEE Publication</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>mowlashuvo2@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>(+880) 1680949744</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" aria-label="Work experience timeline">
+        <div class="container">
+            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            <div class="experience-timeline">
+
+                <!-- Bangladesh Army -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Bangladesh Army</h3>
+                        <h4>Software Engineer (Flutter)</h4>
+                        <span class="date">Mar 2026 – Present</span>
+                        <ul>
+                            <li>Architect and develop secure, high-performance cross-platform applications utilizing
+                                Flutter, REST APIs, WebSockets, and Firebase.</li>
+                            <li>Optimize database operations, data synchronization, and push notification systems to
+                                ensure low-latency, reliable field communications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hi-Tech Bangla -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="assets/images/companies/hi-tech-bangla.png" alt="Hi-Tech Bangla"
+                                onerror="this.style.display='none'">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Hi-Tech Bangla</h3>
+                        <h4>Software Engineer (Flutter)</h4>
+                        <span class="date">May 2025 – Feb 2026</span>
+                        <ul>
+                            <li>Engineered and maintained robust cross-platform applications using Flutter and Dart,
+                                implementing scalable architectures and efficient state management.</li>
+                            <li>Collaborated directly with backend teams to integrate .NET Core services, significantly
+                                improving API response times and mobile-to-server communication.</li>
+                            <li>Delivered maintainable, high-performance applications by integrating complex APIs and
+                                ensuring seamless frontend-backend functionality.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Developer Experience Hub (NEW) -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo"><i class="fas fa-building"></i></div>
+                        <h3>Developer Experience Hub</h3>
+                        <h4>Software Engineer (Flutter)</h4>
+                        <span class="date">May 2024 – Apr 2025</span>
+                        <ul>
+                            <li>Developed and launched 5+ cross-platform applications, improving overall development
+                                efficiency and delivery speed by 30%.</li>
+                            <li>Integrated Google Maps, geofencing, and real-time GPS tracking to power location-based
+                                features and enhance user engagement.</li>
+                            <li>Implemented Firebase Authentication, Firestore, and push notifications, reducing
+                                real-time data response latency by 35%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Liberate Labs -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="assets/images/companies/liberate-labs.png" alt="Liberate Labs Bangladesh"
+                                onerror="this.style.display='none'">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Liberate Labs Bangladesh</h3>
+                        <h4>Software Engineer (Flutter)</h4>
+                        <span class="date">May 2023 – Apr 2024</span>
+                        <ul>
+                            <li>Delivered 3+ Flutter applications featuring responsive UIs and reliable backend
+                                integrations, directly improving client satisfaction.</li>
+                            <li>Managed the complete app lifecycle for Google Play Store and Apple App Store releases,
+                                resolving compliance issues.</li>
+                            <li>Optimized state management and widget rendering, reducing app crash rates across Android
+                                and iOS.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Spinner Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="assets/images/companies/spinner-tech.png" alt="Spinner Tech Limited"
+                                onerror="this.style.display='none'">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Spinner Tech Limited</h3>
+                        <h4>Mobile App Developer (Flutter & Android Native)</h4>
+                        <span class="date">Jan 2021 – Apr 2023</span>
+                        <ul>
+                            <li>Built Flutter and native Android applications utilizing SQLite and Firebase for seamless
+                                online/offline data management.</li>
+                            <li>Optimized application performance and database queries, successfully reducing screen
+                                loading times by 40%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ChangeTechBD -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo"><i class="fas fa-building"></i></div>
+                        <h3>ChangeTechBD</h3>
+                        <h4>Android App Developer (Java)</h4>
+                        <span class="date">Jun 2019 – Nov 2020</span>
+                        <ul>
+                            <li>Developed native Android applications in Java, integrating e-commerce features, order
+                                tracking, and secure payment gateways.</li>
+                            <li>Enhanced application usability and user retention through targeted UI/UX improvements
+                                and performance optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Unchanged - Excellent) -->
+    <section id="skills" aria-label="Technical skills and expertise">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><img src="assets/images/skills/flutter.png" alt="Flutter" onerror="this.remove()">Flutter</span>
+                        <span class="skill-tag"><img src="assets/images/skills/dart.png" alt="Dart" onerror="this.remove()">Dart</span>
+                        <span class="skill-tag"><img src="assets/images/skills/java.png" alt="Java" onerror="this.remove()">Java</span>
+                        <span class="skill-tag"><img src="assets/images/skills/android.png" alt="Android" onerror="this.remove()">Android SDK</span>
+                        <span class="skill-tag"><img src="assets/images/skills/kotlin.png" alt="Kotlin" onerror="this.remove()">Kotlin</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-sitemap"></i> Architecture & Patterns</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">Repository Pattern</span>
+                        <span class="skill-tag">Dependency Injection</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> State Management</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Bloc</span>
+                        <span class="skill-tag">Cubit</span>
+                        <span class="skill-tag">Riverpod</span>
+                        <span class="skill-tag">GetX</span>
+                        <span class="skill-tag">Provider</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Backend & Database</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><img src="assets/images/skills/dotnet.png" alt=".NET Core" onerror="this.remove()">.NET Core</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Hive</span>
+                        <span class="skill-tag"><img src="assets/images/skills/firebase.png" alt="Firebase" onerror="this.remove()">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-map-marker-alt"></i> GPS, Maps & Real-Time</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Google Maps SDK</span>
+                        <span class="skill-tag">Geofencing</span>
+                        <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">Real-Time Tracking</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Notifications</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Firebase Cloud Messaging (FCM)</span>
+                        <span class="skill-tag">Cloud Functions</span>
+                        <span class="skill-tag">Push Notifications</span>
+                        <span class="skill-tag">App Store Deployment</span>
+                        <span class="skill-tag">Play Store Deployment</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-vial"></i> Testing</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Unit Testing</span>
+                        <span class="skill-tag">Widget Testing</span>
+                        <span class="skill-tag">Integration Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-label="Featured projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid">
+
+                <!-- Abedok -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="project-slider">
+                            <div class="slider-container">
+                                <img src="assets/images/abedok/abedok.jpg" alt="Abedok App" class="slider-image"
+                                    onerror="this.style.display='none'">
+                                <img src="assets/images/abedok/abedok1.jpg" alt="Abedok App Image 1"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/abedok/abedok2.jpg" alt="Abedok App Image 2"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/abedok/abedok3.jpg" alt="Abedok App Image 3"
+                                    class="slider-image" onerror="this.style.display='none'">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Abedok</h3>
+                        <p>A Flutter-based job circular & application platform using Firebase and REST APIs. Features
+                            intelligent job filtering, one-tap application workflows, and real-time result
+                            notifications.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">REST API</span>
+                            <span class="project-tag">FCM Notifications</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.abedok" class="btn btn-primary"
+                                target="_blank">
+                                <i class="fab fa-google-play"></i> Play Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pet Guardian -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="project-slider">
+                            <div class="slider-container">
+                                <img src="assets/images/pet_guardian/pet_guardian.png" alt="Pet Guardian"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/pet_guardian/pet_guardian1.png" alt="Pet Guardian Image 1"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/pet_guardian/pet_guardian2.png" alt="Pet Guardian Image 2"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/pet_guardian/pet_guardian3.png" alt="Pet Guardian Image 3"
+                                    class="slider-image" onerror="this.style.display='none'">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pet Guardian</h3>
+                        <p>A Flutter-based real-time pet tracking app with GPS and global SIM, using ASP.NET backend for
+                            live location, activity monitoring, geofencing, and low-latency alerts.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">ASP.NET Core</span>
+                            <span class="project-tag">GPS Tracking</span>
+                            <span class="project-tag">Geofencing</span>
+                            <span class="project-tag">Real-Time Data</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn btn-primary disabled" href="#" aria-disabled="true" tabindex="-1"
+                                onclick="event.preventDefault();" title="Currently in private beta"
+                                style="pointer-events: none; opacity: 0.5;">
+                                <i class="fas fa-lock"></i> Private Beta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SK Mobile School -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="project-slider">
+                            <div class="slider-container">
+                                <img src="assets/images/sk_mobile/sk_mobile1.jpg" alt="SK Mobile School"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/sk_mobile/sk_mobile2.jpg" alt="SK Mobile School Image 1"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/sk_mobile/sk_mobile3.jpg" alt="SK Mobile School Image 3"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/sk_mobile/sk_mobile4.jpg" alt="SK Mobile School Image 4"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/sk_mobile/sk_mobile5.jpg" alt="SK Mobile School Image 5"
+                                    class="slider-image" onerror="this.style.display='none'">
+                                <img src="assets/images/sk_mobile/sk_mobile6.jpg" alt="SK Mobile School Image 6"
+                                    class="slider-image" onerror="this.style.display='none'">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SK Mobile School</h3>
+                        <p>A Flutter e-learning app with secure video streaming, encrypted authentication, course
+                            tracking, and a responsive, user-friendly interface. Includes DRM and anti-screenshot
+                            protection.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Secure Video Player</span>
+                            <span class="project-tag">DRM</span>
+                            <span class="project-tag">E-Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.devxhub.skmobileschool"
+                                class="btn btn-primary" target="_blank">
+                                <i class="fab fa-google-play"></i> Play Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-label="Contact information and form">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>mowlashuvo2@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>(+880) 1680949744</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-text">
+                            <h4>WhatsApp</h4>
+                            <p>+8801680949744</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" name="contact" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required
+                                aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required
+                                aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required
+                                aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required
+                                aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:mowlashuvo2@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+8801680949744" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="https://wa.me/8801680949744" title="WhatsApp" target="_blank"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/mowlashuvo/" title="LinkedIn" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mowlashuvo" title="GitHub" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; <span id="currentYear"></span> Arfatul Mowla Shuvo. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/lazy-loading.js"></script>
+    <script src="scripts/form-validation.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/slider-enhanced.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/analytics.js"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts/animations-enhanced.js"></script>
+</body>
+
+</html>
